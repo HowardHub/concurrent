@@ -34,6 +34,7 @@ public class ThreadPoolExecutorPlay {
             executor.execute(new MyRunnable("" + i));
         }
 
+
         //终止线程池
         executor.shutdown();
         while (!executor.isTerminated()) {
